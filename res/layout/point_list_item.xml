@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:clickable="true"
+        >
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/list_point_name"
+            android:text="Point name"
+            android:textColor="#00aa00"
+            android:textSize="7pt"
+            />
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/list_coord"
+            android:text="lat, lon"
+            android:textSize="6pt"
+            />
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/list_dist"
+            android:text="100m"
+            android:textSize="6pt"
+            />
+</LinearLayout>

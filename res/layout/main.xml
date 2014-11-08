@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+        tools:context=".ui.MainActivity">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="fill_horizontal"
+            android:orientation="horizontal"
+            android:background="#555"
+            android:paddingBottom="10dp"
+            >
+
+        <Button
+                android:id="@id/gps_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="GPS ON"
+                android:layout_weight=".5"
+                android:onClick="onClick"
+                />
+
+        <Button
+                android:id="@id/deg_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="deg"
+                android:layout_weight=".5"
+                android:onClick="onClick"
+                />
+
+        <Button
+                android:id="@id/add_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="+point"
+                android:layout_weight=".5"
+                android:onClick="onClick"
+                />
+
+    </LinearLayout>
+
+    <TextView
+            android:gravity="left"
+            android:id="@id/team_caption"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12pt"
+            android:text="Unit a"
+            />
+
+    <TextView
+            android:gravity="left"
+            android:id="@id/text_label"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text=""
+            />
+
+    <fragment
+            android:id="@+id/points_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:name="name.dudkov.android.team_mapper.ui.PointListFragment"
+            tools:layout="@layout/point_list_item">
+    </fragment>
+
+
+</LinearLayout>

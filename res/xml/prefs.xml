@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:summary="Login"
+            android:title="User information">
+
+        <EditTextPreference
+                android:key="alias"
+                android:title="Unit name"
+                android:defaultValue="team_1"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:summary="Timeouts"
+            android:title="timeouts">
+        <EditTextPreference
+                android:inputType="numberDecimal"
+                android:numeric="integer"
+                android:key="server_delay"
+                android:summary="Send to server every, sec"
+                android:title="Server send timeout"
+                android:defaultValue="60"
+                />
+        <EditTextPreference
+                android:inputType="numberDecimal"
+                android:numeric="integer"
+                android:key="window_time"
+                android:summary="Get best position in, sec"
+                android:title="Window time"
+                android:defaultValue="30"
+                />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

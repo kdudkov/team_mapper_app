@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:stretchColumns="1"
+             android:padding="10dip"
+             style="@style/AppTheme"
+        >
+    <TableRow>
+        <TextView
+                android:text="@string/start_screen_title"
+                android:layout_span="2"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                />
+    </TableRow>
+    <TableRow android:paddingBottom="5dip">
+
+        <TextView
+                android:layout_gravity="start"
+                android:id="@android:id/empty"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text=""
+                />
+    </TableRow>
+
+    <TableRow android:paddingBottom="5dip">
+
+        <TextView
+                android:text="@string/code_title"
+                android:paddingEnd="10dip"
+                android:paddingRight="10dip"
+                android:gravity="end"
+                android:textStyle="bold"
+                />
+
+        <EditText
+                android:id="@+id/code"
+                android:text=""
+                android:singleLine="true"
+                android:inputType="number"
+                />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+                android:text="@string/alias_title"
+                android:paddingEnd="10dip"
+                android:paddingRight="10dip"
+                android:gravity="end"
+                android:textStyle="bold"
+                />
+
+        <EditText
+                android:id="@+id/alias"
+                android:text=""
+                android:singleLine="true"
+                android:inputType="text"
+                />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="50dp">
+
+        <Button
+                android:id="@+id/RunButton"
+                android:text="@string/run_title"
+                android:textStyle="bold"
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                />
+    </TableRow>
+
+</TableLayout>

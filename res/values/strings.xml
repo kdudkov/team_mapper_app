@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">team_mapper_app</string>
+    <string name="code_title">Код команды</string>
+    <string name="alias_title">Имя юнита</string>
+    <string name="run_title">Поехали!</string>
+    <string name="lat_label">Lat:</string>
+    <string name="lon_label">Lon:</string>
+    <string name="acc_label">Точность:</string>
+    <string name="server_message">Сервер сообщает:</string>
+    <string name="start_screen_title">Система TeamMapper</string>
+</resources>

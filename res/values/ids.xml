@@ -1,0 +1,13 @@
+<resources>
+    <item name="team_caption" type="id"/>
+    <item name="lon_label" type="id"/>
+    <item name="lat_label" type="id"/>
+    <item name="acc_label" type="id"/>
+    <item name="text_label" type="id"/>
+    <item name="gps_button" type="id"/>
+    <item name="points_list" type="id"/>
+    <item name="point_name" type="id"/>
+    <item name="deg_button" type="id"/>
+    <item name="exit_button" type="id"/>
+    <item name="add_button" type="id"/>
+</resources>
